@@ -1,0 +1,11 @@
+{
+  "name": "pagina-web-nodejs",
+  "version": "1.0.0",
+  "description": "Pagina estatica simple con nodeJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andhy Ralac",
+  "license": "ISC"
+}
