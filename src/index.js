@@ -2,8 +2,10 @@ const express = require('express');
 const app = express();
 const path = require('path');
 
+process.env.PORT = process.env.PORT || 3011;
+
 // configuraciones -- settings
-app.set('port', 3011 || process.env.PORT); // nuevo de puerto donde escuchara nuestro servidor
+app.set('port', process.env.PORT); // nuevo de puerto donde escuchara nuestro servidor
 app.set("views", path.join(__dirname, "views"));
 app.engine('html', require('ejs').renderFile); // poder usar la extension .html en los archivos de views sustituyendo (.ejs).
 app.set('view engine', 'ejs'); // requiriendo el motor de plantilla que este caso es (ejs).
